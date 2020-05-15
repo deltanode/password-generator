@@ -1,5 +1,5 @@
 ## Password Generator
-> `Password Generator` is a script that generator a secure and strong password with custom length.
+> `Password Generator` is a script that generates a secure and strong password with custom length.
 
 
 ## Usage
