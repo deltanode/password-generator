@@ -19,9 +19,9 @@ or Execute:
 ExecutePasswordGenerator.cmd
 ```
 
-![](screenshot.png)
+![](screenshots/screenshot01.png)
 
-## Install Dependencies
+## Installation
 Set up a virtual environment and install the dependencies:
 ```sh
 pip install -r requirements.txt
