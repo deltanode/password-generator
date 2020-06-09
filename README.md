@@ -21,6 +21,11 @@ ExecutePasswordGenerator.cmd
 
 ![](screenshot.png)
 
+## Install Dependencies
+Set up a virtual environment and install the dependencies:
+```sh
+pip install -r requirements.txt
+```
 
 ## License
 This project is licensed under the terms of the [MIT license](https://github.com/yogesh7132/password-generator/blob/master/LICENSE).
