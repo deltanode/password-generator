@@ -45,27 +45,34 @@ def reset():
 root = Tk()
 
 root.title("Password Generator - [YYScoop.com]")
-root.geometry("400x400")
+root.geometry("390x435")
+root.iconbitmap("img/favicon.ico")
+# root.config(bg="#deecf9")
+root.resizable(0,0)
+
+img= PhotoImage(file="img/pwd.png")
+imglabel = Label(root, image=img,width="390")
+imglabel.grid(row=0,column=0,columnspan=2,sticky=W,padx=0, pady=5)
 
 fontstyle=("Helvitica",10,"bold")
 txt_fontstyle=("Helvitica",15,"bold")
 inplabel = Label(root,text="Enter the Digit of Password:", font= fontstyle)
-inplabel.grid(row=0,column=0,columnspan=2,sticky=W,padx=10, pady=5)
+inplabel.grid(row=1,column=0,columnspan=2,sticky=W,padx=10, pady=5)
 
 inpEntry = Entry(root,width=33,font=txt_fontstyle)
-inpEntry.grid(row=1,column=0,columnspan=2,sticky=W,padx=10, pady=5)
+inpEntry.grid(row=2,column=0,columnspan=2,sticky=W,padx=10, pady=5)
 
-submit_btn = Button(root,text="Generate Password", command=get_input,fg="white",bg="#f57971",width=22)
-submit_btn.grid(row=2,column=0,columnspan=2,sticky=W,padx=10, pady=5)
+submit_btn = Button(root,text="Generate Password", command=get_input,fg="white",bg="#2b88d8",width=22)
+submit_btn.grid(row=3,column=0,columnspan=2,sticky=W,padx=10, pady=5)
 
-reset_btn = Button(root,text="Reset All ", command=reset,fg="white",bg="green",width=22)
-reset_btn.grid(row=2,column=1,columnspan=2,sticky=W,padx=10, pady=5)
+reset_btn = Button(root,text="Reset All ", command=reset,fg="white",bg="#2b88d8",width=22)
+reset_btn.grid(row=3,column=1,columnspan=2,sticky=W,padx=10, pady=5)
 
 
 outlabel = Label(root,text="Your secure password is:", font= fontstyle)
-outlabel.grid(row=3,column=0,columnspan=2,sticky=W,padx=10, pady=5)
+outlabel.grid(row=4,column=0,columnspan=2,sticky=W,padx=10, pady=5)
 
-display_textbox = Text(root,font=txt_fontstyle, width=33, height = 10)
-display_textbox.grid(row=4,column=0,columnspan=2,sticky=W,padx=10, pady=5)
+display_textbox = Text(root,font=txt_fontstyle, width=33, height = 2)
+display_textbox.grid(row=5,column=0,columnspan=2,sticky=W,padx=10, pady=5)
 
 root.mainloop()
